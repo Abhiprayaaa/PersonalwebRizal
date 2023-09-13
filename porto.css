@@ -1,0 +1,41 @@
+.card-text {
+  color: white;
+  text-align: center;
+}
+
+.title-porto {
+  font-family: 'Roboto';
+  font-weight: bold;
+  background-image: linear-gradient(to right, #FEEBC8, #FBBF24, #F59E0B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.card-img-top {
+  padding: 20px;
+}
+
+nav { transition :top 1.5s; /* menentukan posisi awal
+
+di luar layar */ top :-50px;
+
+}
+nav.active {
+
+top :0;
+
+}
+
+/* The animation code */
+@keyframes grow {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+/* The element to apply the animation to */
+.card {
+  background-color: darkgray;
+  animation-name: grow;
+  animation-duration: 2s;
+}

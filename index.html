@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>rizalsaputra</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #111;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid"><a class="navbar-brand" href="#" style="color:#FEEBA2; "><strong>RizalSaputra</strong></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown"><button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color:#FBBF24; "> Others </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="portofolio.html">Portofolio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="card w-100  card bg-dark">
+      <div class="row g-0">
+        <div class="col-md-4"><img src="PicsArt_09-08-07.59.27.jpg" class="img-fluid" alt="..."></div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="card-body">
+            <h4 class="card-title" style="font-size: 15px;">Hello world, I'm</h4>
+            <div>
+              <h5 class="card-title2 " style="font-size:50px; color:white;"><strong>Rizal Saputra</strong></h5>
+            </div>
+            <p>------</p>
+            <p style="color:white;">Welcome to My Personal Website. <span class="wave">👋</span></p>
+            <h4 id="typed" style="font-size: px;" class="h4typed"></h4>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+            <script>
+              // JavaScript code for text change effect here
+              // Menyimpan elemen <p> dengan id="text" ke dalam variabel p
+              var p = document.getElementById("text");
+              // Menyimpan teks-teks yang ingin ditampilkan ke dalam array texts
+              var texts = ["Teks pertama", "Teks kedua", "Teks ketiga"];
+              // Menyimpan indeks array saat ini ke dalam variabel index
+              var index = 0;
+              // Membuat fungsi yang mengubah teks di dalam elemen <p>
+              function changeText() {
+                // Mengubah isi elemen <p> menjadi teks yang sesuai dengan indeks array
+                p.innerHTML = texts[index];
+                // Menambahkan indeks array dengan satu
+                index++;
+                // Jika indeks array melebihi panjang array, kembalikan ke nol
+                if (index >= texts.length) {
+                  index = 0;
+                }
+              }
+              // Menjalankan fungsi changeText setiap dua detik
+              setInterval(changeText, 2000);
+              // JavaScript code for typing effect here
+              // Membuat objek Typed pada elemen <p> dengan id="typed"
+              var typed = new Typed('#typed', {
+                // Menentukan teks-teks yang ingin ditampilkan secara bergantian
+                strings: ["FRONTEND DEVELOPER", "WEB DEVELOPER", "DESAIN AND EDITING"],
+                // Menentukan kecepatan ketikan
+                typeSpeed: 70,
+                // Menentukan interval waktu antara setiap teks (dalam milidetik)
+                backDelay: 2000,
+                // Menentukan apakah animasi akan diulang atau tidak
+                loop: true,
+                // Menentukan kecepatan penghapusan
+                backSpeed: 45
+              });
+            </script>
+            <p>---</p>
+            <!-- HTML -->
+            <p class="textsosmed" style="color:#FEEBA2; ">
+              <strong>Sosmed :</strong>
+            </p>
+            <div class="medsos">
+              <a href="https://instagram.com/rrzlsaa_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==">
+                <!-- Mengganti username dengan nama akun Instagram Anda -->
+                <img src="1-13187_instagram-logo-new-vector-eps-free-download-logo.png" class="instagram zoom">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100071042775588&mibextid=ZbWKwL/">
+                <!-- Mengganti username dengan nama akun Facebook Anda -->
+                <img src="facebook_logos_PNG19759.png" class="gmail zoom">
+              </a>
+              <a href="https://www.linkedin.com/in/rizal-saputra-82919b290">
+                <!-- Mengganti username dengan nama akun LinkedIn Anda -->
+                <img src="Linkedin-logo.png" class="twiter zoom">
+              </a>
+              <a href="https://github.com/Abhiprayaaa">
+                <!-- Mengganti username dengan nama akun GitHub Anda -->
+                <img src="github_PNG40.png" class="github zoom">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="text-scramble.js"></script>
+      <script src="main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
+      
+      </body>   
+    </html>

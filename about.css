@@ -1,0 +1,149 @@
+nav {
+transition: top 1.5s;
+/* menentukan posisi awal
+
+di luar layar */ top: -50px;
+
+}
+
+/* menentukan posisi akhir di dalam layar */
+
+nav.active {
+
+top: 0;
+
+}
+
+.card-title {
+  font-family: 'Roboto';
+   font-weight: bold;
+   background-image: linear-gradient(to right, #FEEBC8, #FBBF24, #F59E0B);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-align: center;
+   
+}
+
+.col {
+
+  display: flex; /* Membuat kontainer fleksibel */
+  align-items: center; /* Menyelaraskan elemen anak secara vertikal */
+  justify-content: center; /* Menyelaraskan elemen anak secara horizontal */
+}
+
+.card-img-top {
+  width: 60%!important; /* Menentukan lebar gambar */
+  height: 60%!important;/* Menentukan tinggi gambar */
+  object-fit: cover;
+  margin: 67px;
+  border-radius:100%!important;
+  border:20px solid, transparent;
+  background-color: #FEEBC8; 
+  box-shadow:0 0 50px #FBBF24;
+  position: relative;
+  white-space: nowrap;
+  overflow : hidden;
+}
+
+/* Kode animasi */
+@keyframes muncul-dari-kiri {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0%);}
+}
+
+/* Kode CSS */
+/* Kode animasi */
+@keyframes muncul-dari-kiri {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0%);}
+}
+
+@keyframes muncul-dari-kanan {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0%);}
+}
+
+/* Elemen yang diterapkan animasi */
+h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  animation-name: muncul-dari-kiri;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.p1 {
+  text-align: center;
+  color: white;
+  animation-name: muncul-dari-kiri;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.p2 {
+  text-align: center;
+  color: white;
+  animation-name: muncul-dari-kanan;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.card-body2 {
+  margin: 7px;
+  display: flex;
+}
+
+/* Menambahkan efek hover ke gambar */
+.image-card2 img {
+  margin: 16px;
+  border-radius: 20%;
+  object-fit: cover;
+  /* Menambahkan transisi untuk efek membesar */
+  transition: transform 0.3s;
+}
+
+/* Membesarkan gambar saat di-hover */
+.image-card2 img:hover {
+  transform: scale(1.3);
+  /* Menambahkan bayangan berwarna #F59E0B saat di-hover */
+  box-shadow: 0 0 20px #FF8C00;
+}
+
+/* Menambahkan efek hover ke ikon */
+.html-png,
+.css-png,
+.js-png,
+.php-png,
+.reactjs-png,
+.nodejs-png,
+.alphinejs-png,
+.vuejs-png,
+.tailwind-png,
+.bootstrap-png {
+  outline: 1px solid #FBBF24 ;
+  outline-offset: 4px;
+  border :3px;
+  width: 35px;
+  height: 35px;
+  /* Menambahkan transisi untuk efek membesar dan berkedip */
+  transition: transform 1s, box-shadow 1s;
+}
+
+/* Membesarkan dan memberikan bayangan berkedip saat di-hover */
+.html-png:hover,
+.css-png:hover,
+.js-png:hover,
+.php-png:hover,
+.reactjs-png:hover,
+.nodejs-png:hover,
+.alphinejs-png:hover,
+.vuejs-png:hover,
+.tailwind-png:hover,
+.bootstrap-png:hover {
+  transform: scale(2);
+  filter: brightness(1.2) drop-shadow(0px 0px 10px #F59E0B);
+  

@@ -1,0 +1,130 @@
+/* Menambahkan properti background-image untuk menentukan warna-warna gradien */
+h4 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    background-image: linear-gradient(to right, #FEEBC8, #FBBF24, #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-title2 {
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.h4typed {
+  position: absolute;
+    overflow: hidden;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(12deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(9deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+
+/* Kode animasi */
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* Kode CSS Anda */
+.medsos img {
+    width: 30px;
+    margin-right: auto;
+    margin: 30px;
+    margin-left: -1px;
+    margin-top: 1px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.medsos img:active {
+   box-shadow :0 0 50px orange; 
+   /* Mengganti warna bayangan menjadi #F59E0B */ filter :brightness(200%); 
+   /* Meningkatkan kecerahan gambar */ 
+}
+
+.instagram { 
+   outline :1px solid #FBBF24; 
+   /* Lebar, gaya, dan warna garis tepi */ outline-offset :5px; 
+   /* Jarak antara garis tepi dan border */ animation-name :slide-in; 
+   /* Nama animasi */ animation-duration :1s; 
+   /* Durasi animasi */ animation-delay :0s; 
+   /* Jeda sebelum animasi dimulai */ animation-fill-mode :both; 
+   /* Gaya elemen sebelum dan sesudah animasi */ 
+}
+
+.gmail { 
+   height :30px; 
+   width :5px; 
+   outline :1px solid #FBBF24; 
+   outline-offset :5px; 
+   animation-name :slide-in; 
+   animation-duration :1s; 
+   animation-delay :0.5s; 
+   animation-fill-mode :both; 
+}
+
+.twiter { height :30px; outline :1px solid #FBBF24; outline-offset :5px; animation-name :slide-in; animation-duration :1s; animation-delay :1s; animation-fill-mode :both; }
+
+.github { outline :1px solid #FBBF24; outline-offset :5px; animation-name :slide-in; animation-duration :1s; animation-delay :1.5s; animation-fill-mode :both; }
+
+.img-fluid { border-radius :50%; }
+
+.img-fluid { width :270px; height :270px; border-radius :50%; border :20px solid, transparent; background-color :#FEEBC8; margin-top :20px; margin-left :30px; padding :2px; box-shadow :0 0 25px #FBBF24; position :relative; left :-100%; transition :left 2s; }
+
+nav { transition :top 1.5s; /* menentukan posisi awal
+
+di luar layar */ top :-50px;
+
+}
+
+/* menentukan posisi akhir di dalam layar */
+
+nav.active {
+
+top :0;
+
+}
+
+h5 { white-space :nowrap; }
+
